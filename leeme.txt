@@ -1,0 +1,20 @@
+Para el correcto funcionamiento de la app 
+agregar en el archivo package.json la script start como se ve a continuacion
+
+{
+  "name": "jsonserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch oficiosyprofeciones.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
+una ves guardado el archivo oficiosyprofeciones.json luego ejecute el bat 
+desde la carpeta de jsonserver

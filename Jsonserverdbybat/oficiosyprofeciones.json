@@ -1,0 +1,139 @@
+{
+  "ocupaciones": [
+    {
+      "id": "1",
+      "nomb": "Albañil",
+      "fotourl": "https://cdn.pixabay.com/photo/2017/01/31/17/34/brick-2025789_960_720.png",
+      "videourl": "https://www.youtube.com/embed/cOXxe9I2Gy0",
+      "salario": "350.00",
+      "descripcion": "trabajos con mezcla y concreto suelos paredes",
+      "cat": "construccion"
+    },
+    {
+      "id": "2",
+      "nomb": "Mecanico",
+      "fotourl": "https://eloficial.ec/wp-content/uploads/2018/08/soldar-con-arco-ele%CC%81ctrico-3-768x507.png",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "400.00",
+      "descripcion": "trabaja estructuras metalicas",
+      "cat": "tecnologia"
+    },
+    {
+      "id": "3",
+      "nomb": "Vendedor",
+      "fotourl": "https://cdn.pixabay.com/photo/2016/01/21/23/43/market-1154999_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "400.00",
+      "descripcion": "vende productos ",
+      "cat": "comercio"
+    },
+    {
+      "id": "4",
+      "nomb": "Contratista",
+      "fotourl": "https://cdn.pixabay.com/photo/2018/03/03/20/02/laptop-3196481_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "600.00",
+      "descripcion": "contrata personal para desarrollar proyectos",
+      "cat": "comercio"
+    },
+    {
+      "id": "5",
+      "nomb": "Arquitecto",
+      "fotourl": "https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "1,800.00",
+      "descripcion": "diseña estructuras mobiliarias y obras",
+      "cat": "construccion"
+    },
+    {
+      "id": "6",
+      "nomb": "Psicologo",
+      "fotourl": "https://cdn.pixabay.com/photo/2020/11/03/15/31/doctor-5710155_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "1,500.00",
+      "descripcion": "evalua salud mental de pacientes",
+      "cat": "salud"
+    },
+    {
+      "id": "7",
+      "nomb": "Auxiliar",
+      "fotourl": "https://cdn.pixabay.com/photo/2018/08/16/11/36/men-3610255_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "360.00",
+      "descripcion": "ayuda a encargados de cierta area de empresa",
+      "cat": "comercio"
+    },
+    {
+      "id": "9",
+      "nomb": "Supervisor",
+      "fotourl": "https://cdn.pixabay.com/photo/2016/11/18/12/03/white-male-1834094_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "370.00",
+      "descripcion": "verifica el trabajo de los demas empleados",
+      "cat": "comercio"
+    },
+    {
+      "id": "10",
+      "nomb": "Medico",
+      "fotourl": "https://cdn.pixabay.com/photo/2020/11/02/19/52/doctor-5707722_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "1,800.00",
+      "descripcion": "ayuda a mejorar y evaluar salud de personas",
+      "cat": "salud"
+    },
+    {
+      "id": "11",
+      "nomb": "Estilista",
+      "fotourl": "https://cdn.pixabay.com/photo/2017/08/24/11/12/makeup-2676392_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "800.00",
+      "descripcion": "encargado de trabajos esteticos en mujeres",
+      "cat": "comercio"
+    },
+    {
+      "id": "12",
+      "nomb": "Barbero",
+      "fotourl": "https://cdn.pixabay.com/photo/2019/11/11/15/32/barber-4618697_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "500.00",
+      "descripcion": "encargado de cortes de cabello y barba",
+      "cat": "comercio"
+    },
+    {
+      "id": "13",
+      "nomb": "Carpintero",
+      "fotourl": "https://cdn.pixabay.com/photo/2017/06/20/17/17/tools-2423826_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "600.00",
+      "descripcion": "realiza trabajos de estructuras con madera",
+      "cat": "comercio"
+    },
+    {
+      "id": "14",
+      "nomb": "Chef",
+      "fotourl": "https://cdn.pixabay.com/photo/2019/02/04/22/05/chef-3975835_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "700.00",
+      "descripcion": "encargado de diseñar platillos",
+      "cat": "comercio"
+    },
+    {
+      "id": "15",
+      "nomb": "Programador",
+      "fotourl": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "1,600.00",
+      "descripcion": "encargado de crear software",
+      "cat": "tecnologia"
+    },
+    {
+      "id": "16",
+      "nomb": "Digitador",
+      "fotourl": "https://cdn.pixabay.com/photo/2017/01/21/09/47/learn-1996846_960_720.jpg",
+      "videourl": "https://www.youtube.com/embed/kWm507eq20U",
+      "salario": "800.00",
+      "descripcion": "digita texto en maquina o en pc",
+      "cat": "comercio"
+    }
+  ]
+}

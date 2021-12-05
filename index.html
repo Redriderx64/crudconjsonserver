@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Ejemplo web api</title>
+	<meta charset="utf-8"  />
+<LINK rel=StyleSheet href="estilo.css" type="text/css" >
+<script src="codigo.js"></script>
+<style>
+body{
+	margin:0;
+	padding:0;
+	background:#525252;
+	font:70% Arial, Helvetica, sans-serif; 
+	color:rgb(255, 255, 255);
+	line-height:150%;
+	text-align:left;
+}
+a{
+	text-decoration:none;
+	color:#057fac;
+}
+a:hover{
+	text-decoration:none;
+	color:#999;
+}
+h1{
+	font-size:140%;
+	margin:0 20px;
+	line-height:80px;	
+}
+h2{
+	font-size:120%;
+}
+#container{
+	margin:0 auto;
+	width:680px;
+	background:#fff;
+	padding-bottom:20px;
+}
+#content{margin:0 20px;}
+p.sig{	
+	margin:0 auto;
+	width:680px;
+	padding:1em 0;
+}
+form{
+	margin:1em 0;
+	padding:.2em 20px;
+	background:rgb(108, 112, 74);
+}
+
+div form.create-Act{
+	display: block;
+  margin: 0.5px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  font-size: 0;
+  text-align: center;
+}
+div form.create-Act label{
+	display: relative;
+	padding: 16px 20px 13px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #939393;
+  cursor: pointer;
+}
+div form.create-Act input{
+	display: inline-block;
+  position: relative;
+  width: auto;
+  height: 27px;
+  line-height: 27px;
+  margin: 5px -5px 0;
+  padding: 7px 5px 3px;
+  border-color: rgb(77, 75, 75);
+  outline: none;
+  color: #555;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: .6;
+  transition: all linear .3s;
+}
+div form.create-Act select{
+	display: inline-block;
+  position: relative;
+  width: auto;
+  height: 27px;
+  line-height: 27px;
+  margin: 5px -5px 0;
+  padding: 7px 5px 3px;
+  border-color: rgb(77, 75, 75);
+  outline: none;
+  color: #555;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: .6;
+  transition: all linear .3s;
+}
+button.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button.button:hover {
+    background-color: blue; 
+    color: white;
+}
+
+
+
+</style>
+</head>
+
+<body style="background-color: #2F4F4F  ;">
+ <h1 style="text-align: center;">Parcial 2 CRUD con JSON Server </h1>
+     <p style="text-align: center;">Alumno: Oscar Daniel Jiménez Lara<br>
+		Carnet: JL09002<br></p>
+	 <p style="text-align: center;">Alumno: Mendonza Carranza Armando Enrrique<br>
+		Carnet: MC09084<br>
+	 <p style="text-align: center;">Alumno: Barrios Urias Francisco Antonio<br>
+		Carnet: BU03002<br>
+	 <p style="text-align: center;">Alumno: Solorzano Douglas Oswaldo<br>
+		Carnet: SS06003<br>
+		#Grupo: 11</p>
+	 	<div style="text-align: center;">
+	 <button class="button" onclick="obtenerPuestos();this.style.display='none';"style="cursor:pointer; background-color: blue;191970: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">Obtener Puestos</button>
+	</div>
+	 <div id="listado" style="display:none;">
+		<form class="create-Act" name="datosIn" id="formulario"  >
+			<label style="color: black;">Registrar nuevo Puesto</label><br>
+
+			<!--<label >ID:</label>
+			<input type="text" id="c5"  class="idC" placeholder="ID">-->
+	   
+	   <label >Imagen:</label>
+	   <input type="text" id="imgC" class="imgC" placeholder="url imagen de producto" >
+	   
+	   <label >Video:</label>
+	   <input type="text" id="vidC" class="vidC" placeholder="url video de producto" >
+	 
+	 <label >Salario:</label>
+	 <input type="text" id="precioC"  class="salarioC" placeholder="Salario"><br>
+   
+   <label >Puesto:</label>
+   <input type="text" id="tituloC"  class="tituloC" placeholder="Puesto"> 
+   
+   <label >Descripcion:</label>
+   <input type="text" id="descC" class="descC" placeholder="Descripcion">
+  
+   <label >Categoria:</label>
+   <select class="seleccion" name="catC" >
+	<option value="construccion">construccion
+	<option value="tecnologia">tecnologia
+	<option value="comercio">comercio
+	<option value="salud">salud
+	</select>
+   
+   <br>
+   <br>
+   <button class="button" onclick="guardarPuesto() style="cursor:pointer; background-color: #5c77ec;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">Registrar Puesto</button>
+   
+</form>
+
+	 <form name="filtroprods" id="filtroprods" style="text-align: center;">
+	   Seleccione Categorias<br> 
+	   
+	   <input type="checkbox" id="c1" value="c1" checked>Construccion
+	 <input type="checkbox" id="c2" value="c2" checked>Tecnologia
+   <input type="checkbox" id="c3" value="c3" checked>Salud
+   <input type="checkbox" id="c4" value="c4" checked>Comercio
+   <p  style="text-align: center; color: rgb(3, 3, 3);"><b>Click en la imagen para Acercamiento</b></p>
+   <p  style="text-align: center; color: rgb(3, 3, 3);"><b>Click en salario para ordenar Asc o Desc</b></p>
+     <table id="tabla" border="1" cellspacing="0" cellpadding="0" style="width:80%;margin:auto; border-collapse:collapse;background-color: rgb(96, 96, 96);">
+	 <thead>
+	 <tr><th>id</th><th>foto</th><th>video</th><th  id="salario">Salario</th>
+	 <th>nombre</th><th>Descripcion</th><th>Categoria</th><th>Eliminar</th></tr>
+	 </thead>
+	 <tbody id="tbody"></tbody>
+	 </table>
+	 </form>
+	 </div> 
+</body>
+</html>
